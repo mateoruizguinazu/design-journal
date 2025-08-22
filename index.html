@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS -->
             <link rel="stylesheet" href="css/style.css">
+        <!-- FontAwesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Google Fonts -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +16,20 @@
     <body>
         <!-- Site Header -->
         <header class="site-header">
-            <img src="images/logo.png" class="logo" alt="Logotype of CraftJournal">
-            <nav>
+            <a href="/" class="logo">
+                <h1 class="visually-hidden">CraftJournal</h1>
+                <img src="images/logo.png" class="logo-img" alt="Logotype of CraftJournal">
+            </a>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                <i class="fa-solid fa-bars"></i>
+                <span class="visually-hidden">Menu</span>
+            </button>
+
+            <nav id="main-nav">
                 <ul>
                     <li><a href="#">Home</a></li>
+                    <li><a href="https://www.mateoruizguinazu.com/">Portfolio</a></li>
                     <li><a href="#">About me</a></li>
                 </ul>
             </nav>
@@ -29,17 +41,91 @@
                 class="main"
                 aria-label="asd">
                     <article>
-                        <img src="" alt="">
-                        <header class="">
-                            <h2>asd</h2>
-                            <h3>asdasd</h3>
-                        </header>
+                        <div class="main-article-content">
+                            <time datetime="2025-08-22">Aug. 22, 2025</time>
+                            <h2>Beyond the Rounded Corner: The Digital Craftsman's Revolt</h2>
+                            <p>In an era where digital design has become a formula of templates, we've forgotten a fundamental truth: design is a craft.</p>
+                        </div>
                     </article>
                 </a>
             </section>
             <!-- Coming soon articles -->
             <section class="coming-soon-article">
-                Coming soon...
+
+                <h2 class="soon-title">Coming soon...</h2>
+
+                <a href=""
+                class="soon-article"
+                aria-label="asd">
+                    <article>
+                        <div class="soon-article-content">
+                            <img src="images/blog-image-01.png" alt="Image">
+                            <h3>Is Your Typography Even Trying?</h3>
+                            <p>We've settled for the bare minimum. Every product looks like the last because nobody risks more than a default font. This isn't design. It's laziness.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href=""
+                class="soon-article"
+                aria-label="asd">
+                    <article>
+                        <div class="soon-article-content">
+                            <img src="images/blog-image-02.png" alt="Image">
+                            <h3>Your Animations Are Pointless</h3>
+                            <p>A splashy animation is just visual fluff if it doesn't solve a problem. Stop decorating and start designing.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href=""
+                class="soon-article"
+                aria-label="asd">
+                    <article>
+                        <div class="soon-article-content">
+                            <img src="images/blog-image-wip.png" alt="Work In Progress sign">
+                            <h3>The Cult of "Good Enough"</h3>
+                            <p>Forget the agile manifesto. True craft isn't about shipping fast; it's about shipping great. Stop chasing deadlines and start chasing distinction. Your users deserve better than a quick fix.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href=""
+                class="soon-article"
+                aria-label="asd">
+                    <article>
+                        <div class="soon-article-content">
+                            <img src="images/blog-image-wip.png" alt="Work In Progress sign">
+                            <h3>Stop Being a Data Puppet</h3>
+                            <p>Data can tell you what people do, but it can’t tell you why. If you’re only designing for metrics, you're not a designer—you're a data input clerk.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href=""
+                class="soon-article"
+                aria-label="asd">
+                    <article>
+                        <div class="soon-article-content">
+                            <img src="images/blog-image-wip.png" alt="Work In Progress sign">
+                            <h3>The Fear of the Empty Screen</h3>
+                            <p>Our industry is crippled by designers afraid of negative space. We fill every pixel, every moment, with noise. A masterful design isn't about what's there; it’s about what you had the courage to leave out.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href=""
+                class="soon-article"
+                aria-label="asd">
+                    <article>
+                        <div class="soon-article-content">
+                            <img src="images/blog-image-wip.png" alt="Work In Progress sign">
+                            <h3>The Death of the First Stroke</h3>
+                            <p>We've lost the craft. The tactile, messy process of sketching and ideating is dead, replaced by sterile, digital perfection. You can't forge a great product from a template.</p>
+                        </div>
+                    </article>
+                </a>
+
             </section>
         </main>
         <!-- footer -->
