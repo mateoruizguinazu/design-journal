@@ -14,12 +14,11 @@ body {
    ================= */
 
 .site-header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5em 1.5em;
+    position: sticky;
+    top: 0;
+    padding: 0.5em 1em;
     background-color: white;
+    border-bottom: 1px solid #cacaca;
 }
 
 .logo-img {
@@ -34,12 +33,19 @@ body {
     height: 36px;
 }
 
-nav {
+#main-nav {
     position: absolute;
     width: 100%;
     top: 100%;
     left: 0;
     background-color: white;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#main-nav.nav-open {
+    max-height: 250px;
 }
 
 nav a {
@@ -62,6 +68,7 @@ li {
     border-bottom: 1px solid #CACACA;
 }
 
+/* MEDIA QUERY */
 
 @media (min-width: 480px) {
     .site-header {
@@ -71,20 +78,28 @@ li {
         padding: 0.5em 1.5em;
     }
 
-    nav a {
-        color: #090909;
-        text-transform: uppercase;
-        font-size: 1rem;
-        text-decoration: none;
-        font-weight: 600;
+    .nav-toggle {
+        display: none;
     }
 
+    #main-nav {
+        position: relative;
+        max-height: 30px;
+        overflow: auto;
+        display: flex;
+        width: fit-content;
+
+    }
+
+
     ul {
-        
+        width: fit-content;
         display: flex;
         gap: 1em;
-        margin: 0;
-        padding: 0;
+    }
+
+    li {
+        border: none;
     }
 }
 
@@ -96,6 +111,20 @@ li {
     Main Element Layout 
    ================= */
 
+main {
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 
