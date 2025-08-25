@@ -6,6 +6,9 @@ html,
 body {
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
@@ -16,9 +19,16 @@ body {
 .site-header {
     position: sticky;
     top: 0;
-    padding: 0.5em 1em;
+    padding: 0.5em;
+    padding-inline: 1em;
     background-color: white;
     border-bottom: 1px solid #cacaca;
+}
+
+.site-header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo-img {
@@ -75,7 +85,7 @@ li {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0.5em 1.5em;
+        padding-inline: 1.5em;
     }
 
     .nav-toggle {
@@ -84,16 +94,14 @@ li {
 
     #main-nav {
         position: relative;
-        max-height: 30px;
+        max-height: none;
         overflow: auto;
         display: flex;
         width: fit-content;
 
     }
 
-
     ul {
-        width: fit-content;
         display: flex;
         gap: 1em;
     }
@@ -108,34 +116,59 @@ li {
 
 
 /* =================
-    Main Element Layout 
+    Main Elements Layout 
    ================= */
 
 main {
-    padding: 1em;
-    margin: 0 auto;
-    max-width: 980px;
+    
 }
 
-.container {
+.main-article {
     width: 100%;
-    margin: 0 auto;
-    max-width: 980px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 5rem 1rem 1rem 1rem;
+    background: white url("../images/blog-image-hero.png");
+    background-size: cover;
 }
 
+
+
+.main-article-content {
+    color: white;
+}
 
 
 @media (min-width: 480px) {
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 980px;
+    }
+
+    .main-article {
+        height: 490px;
+        background: white url("../images/img-main.png");
+    }
 
 }
 
 
 
 /* =================
-    Article Card 
+    Main Article Card 
+   ================= */
+
+
+
+
+
+
+
+
+
+
+/* =================
+    Soon Article Cards 
    ================= */
 
 
@@ -146,6 +179,33 @@ main {
 /* =================
     Typography 
    ================= */
+
+main a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 0.25em 0;
+}
+
+.main-article-content h2 {
+    font-family: 'Playfair', serif;
+}
+
+time {
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 1.5;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.625;
+}
 
 
 
