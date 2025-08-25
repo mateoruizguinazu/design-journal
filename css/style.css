@@ -148,12 +148,14 @@ footer .container {
 
 .main-article {
     width: 100%;
+}
+
+.main {
     padding: 5rem 1rem 1rem 1rem;
     background: white url("../images/blog-image-hero.png");
     background-size: cover;
     display: flex;
     align-items: end;
-
 }
 
 @media (min-width: 480px) {
@@ -164,7 +166,7 @@ footer .container {
         max-width: 980px;
     }
 
-    .main-article {
+    .main {
         height: 490px;
         background: white url("../images/img-main.png");
         background-size: auto;
@@ -185,7 +187,7 @@ footer .container {
    ================= */
 
 .coming-soon-article {
-    padding: 1em;
+    padding: 0 1em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -206,10 +208,34 @@ footer .container {
     width: 100%;
 }
 
-@media (min-width:480px) {
+@media (min-width:1024px) {
     .coming-soon-article {
         padding: 0;
     }
+
+    .main-article {
+        margin-top: 2em;
+    }
+    
+}
+
+/* =================
+    Article page 
+   ================= */
+
+.article {
+    background-image: url(../images/bg-grid-tile.png);
+    background-repeat: repeat;
+}
+
+.article-page {
+    background-color: white;
+    margin: 4em auto;
+    padding: 1em;
+}
+
+.article-header {
+    width: 100%;
     
 }
 
