@@ -13,7 +13,7 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     </head>
-            <body>
+    <body>
         <!-- Site Header -->
         <header class="site-header">
             <div class="container">
@@ -37,10 +37,74 @@
             </div>
         </header>
 
-        <main class="container">
+        <!-- Main body -->
+
+        <main>
+            <div class="about">
+                <a class="back-btn" onclick="history.back()"><i class="fa-solid fa-chevron-left"></i> Back</a>
+                <section class="intro container">
+                    <img src="images/img-about.png" class="about-img" alt="Mateo jumping on a dune questioning his own sanity">
+                    <div class="intro-text">
+                        <h2>Hello there...</h2>
+                        <p>My name is Mateo, I’m a designer looking for a change in the product design industry, to a point that I have decided to become a Design Engineer and make the change myself.</p>
+                    </div>
+                    </section> 
+            </div>
+            <section class="manifesto container">
+                <b>My Manifesto: From Designer to Product Forger</b>
+                <p>I am a designer. I have spent years crafting products that live on screens, but I reached a breaking point. I grew tired of the distance between the vision and reality, of the formulas that limit creativity, and of the rush that kills craftsmanship. My solution was not a new title, but a change in mindset. I decided that the only way to reclaim the craft in the digital world was to turn the vision into code myself.</p>
+                <b>Why This Isn't Just Another "Learning Journal"</b>
+                <p>This space is the record of my evolution, a live testimony of my transition to a Design Engineer. I am not here just to document what I learn, but to confront the industry's status quo. Every project and every article is part of my personal manifesto: a defense of intention, authenticity, and an obsession with detail. It is a challenge to the culture of the generic, and an invitation to build products that not only work, but also endure.</p>
+            </section>
+
+
+             <!-- Coming soon articles -->
+            <aside class="coming-soon-article container">
+
+                <h2 class="soon-title">Coming soon...</h2>
+
+                <a href=""
+                class="soon-article"
+                aria-label="asd">
+                    <article>
+                        <div class="soon-article-content">
+                            <img src="images/blog-image-01.png" alt="Image">
+                            <h3>Is Your Typography Even Trying?</h3>
+                            <p>We've settled for the bare minimum. Every product looks like the last because nobody risks more than a default font. This isn't design. It's laziness.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href=""
+                class="soon-article"
+                aria-label="asd">
+                    <article>
+                        <div class="soon-article-content">
+                            <img src="images/blog-image-02.png" alt="Image">
+                            <h3>Your Animations Are Pointless</h3>
+                            <p>A splashy animation is just visual fluff if it doesn't solve a problem. Stop decorating and start designing.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href=""
+                class="soon-article"
+                aria-label="asd">
+                    <article>
+                        <div class="soon-article-content">
+                            <img src="images/blog-image-wip.png" alt="Work In Progress sign">
+                            <h3>The Cult of "Good Enough"</h3>
+                            <p>Forget the agile manifesto. True craft isn't about shipping fast; it's about shipping great. Stop chasing deadlines and start chasing distinction. Your users deserve better than a quick fix.</p>
+                        </div>
+                    </article>
+                </a>
+            </aside>
         </main>
 
-<button onclick="history.back()">Go Back</button>
+        
+        
+
+
 
         <!-- footer -->
         <footer>
